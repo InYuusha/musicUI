@@ -8,7 +8,16 @@
       </div>
       <h4 class="mt-6 ml-5 white--text">For You</h4>
       <v-list flat dense class="mt-5">
-          
+        <v-list-item-group v-model="selectItem" color="orange">
+            <v-list-item v-for="(item,key) in items" :key="key" active-class="border">
+                <v-list-item-icon>
+                    <v-icon v-text="item.icon"></v-icon>
+                </v-list-item-icon>
+                <v-list-item-content>
+                    <v-list-item-title v-text="item.text"></v-list-item-title>
+                </v-list-item-content>
+            </v-list-item>
+        </v-list-item-group>    
       </v-list>
   </v-navigation-drawer>
 </template>
