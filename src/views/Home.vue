@@ -52,6 +52,61 @@
          </figure>
        </slide>
     </Carousel-3d>
+    <div class="d-flex flex-column justify-between align-center">
+      <v-app-bar class="" color="#2F3346" flat>
+        <v-btn text class="ml-2 white--text">
+          <v-icon left dark color="#878A94">fas fa-caret-right</v-icon>
+          2.54M Listeners
+        </v-btn>
+        <v-btn dark color="orange">
+          <v-icon left dark >fas fa-heart</v-icon>
+          1.2M Likes
+        </v-btn>
+        <v-btn color="#1E2337" dark class="ml-2">
+          <v-icon left dark>fas fa-retweet</v-icon>
+          201K Reposts
+        </v-btn>
+        <v-btn color="#1E2337" dark class="ml-2">
+          <v-icon left dark>fas fa-share-square</v-icon>
+          Share 
+        </v-btn>
+        <v-btn color="1E2337" dark class="ml-2">
+          <v-icon left dark>fas fa-ellipsis-h</v-icon>
+          More
+        </v-btn>
+      </v-app-bar>
+    </div>
+    <div class="d-flex flex-column justify-space-between align-center">
+        <v-row>
+          <v-col cols="12" sm="2"></v-col>
+          <v-col cols="12" sm="8" style="position:absolute;bottom:0;
+          margin-left:auto;margin-right:auto;left:0;right:0;text-align:center">
+            <v-card title color="#1E2337" dark>
+                <v-progress-linear :value="50" class="my-0" height="3"></v-progress-linear>
+                  <v-row>
+                    <v-col cols="3" sm="2">
+                      <v-img src="https://static.displate.com/280x392/displate/2020-01-18/0f7ea827e6c9134140bf1832acc69480_fe8418eefc7d7b64bd5be271c7c919e2.jpg" max-height="60" max-width="50" class="mt-6 ml-4"></v-img>
+                    </v-col>
+                    <v-col cols="6" sm="2">
+                      <h6 class="mt-5 ml-n16 grey--text text--lighten">La liberte</h6><br>
+                      <span clas="grey--text text-darken-2">Soolking</span>
+                    </v-col>
+                    <v-col cols="6" sm="2">
+                      <v-btn icon class="ml-n14 mt-4">
+                        <v-icon>mdi-rewind</v-icon>
+                      </v-btn>
+                      <v-btn icon class="mt-4">
+                        <v-icon color="orange">mdi-pause</v-icon>
+                      </v-btn>
+                      <v-btn icon class=" mt-4">
+                        <v-icon>mdi-fast-forward</v-icon>
+                      </v-btn>
+                    </v-col>
+                  </v-row>
+            </v-card>
+          </v-col>
+        </v-row>
+      </div>
    
   </v-container>
 </v-app>
