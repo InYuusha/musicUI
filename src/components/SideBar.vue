@@ -13,6 +13,23 @@
                 <v-list-item-icon>
                     <v-icon v-text="item.icon"></v-icon>
                 </v-list-item-icon>
+
+                <v-list-item-content>
+                    <v-list-item-title v-text="item.text"></v-list-item-title>
+                </v-list-item-content>
+            </v-list-item>
+        </v-list-item-group>    
+     
+      <v-divider class="mx-10 my-7"></v-divider>
+      <h4 class="mt-3 ml-5 white--text">Collection</h4>
+
+       
+        <v-list-item-group  color="orange">
+            <v-list-item v-for="(item,key) in collections" :key="key" active-class="border">
+                <v-list-item-icon>
+                    <v-icon v-text="item.icon"></v-icon>
+                </v-list-item-icon>
+
                 <v-list-item-content>
                     <v-list-item-title v-text="item.text"></v-list-item-title>
                 </v-list-item-content>
@@ -25,6 +42,8 @@
 <script>
 export default {
     data:()=>({
+        selectItem:0,
+        drawer:null,
         items:[
             {icon:'fas fa-satellite-dish',text:'Discover'},
             {icon:'fas fa-stream',text:'Stream'},
